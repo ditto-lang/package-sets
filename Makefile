@@ -1,6 +1,8 @@
 .PHONY: compile
 compile: ## Compile packages.json
-	cat ./package.dhall | dhall-to-json | jq -S | tee packages.json
+	@cat ./package.dhall | dhall-to-json | jq -S | tee packages.json
+	@# FIXME: use ditto for this
+	@nix-hash --type sha256 --base32 packages.json | tee packages.sha256
 
 .PHONY: format
 format: ## Format all the things
