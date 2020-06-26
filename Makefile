@@ -3,8 +3,9 @@ all: compile format
 
 .PHONY: compile
 compile: ## Compile packages.json
-	@./build.py | tee packages.json
-	@# FIXME: use ditto for this?
+	@(set -euo pipefail; ./build.py | tee packages.json)
+
+	@#FIXME: use ditto for this?
 	@nix-hash --type sha256 --base32 packages.json | tee packages.sha256
 
 .PHONY: format
