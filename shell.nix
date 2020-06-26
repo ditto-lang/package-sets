@@ -1,1 +1,2 @@
-with import ./nixpkgs { }; mkShell { buildInputs = [ gnumake dhall dhall-json jq ]; }
+with import ./nixpkgs { };
+mkShell { buildInputs = [ gnumake dhall dhall-json jq nodejs nodePackages.prettier ]; }
