@@ -1,4 +1,4 @@
 
 ```
-nix-shell --run 'make compile'
+nix-shell --run make
 ```

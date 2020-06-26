@@ -1,14 +1,15 @@
+.PHONY: all
+all: compile format
+
 .PHONY: compile
 compile: ## Compile packages.json
-	@cat ./packages.dhall | dhall-to-json | jq -S | tee packages.json
-	@./lint.js
-	@# FIXME: use ditto for this
+	@./build.py | tee packages.json
+	@# FIXME: use ditto for this?
 	@nix-hash --type sha256 --base32 packages.json | tee packages.sha256
 
 .PHONY: format
 format: ## Format all the things
 	find . -iname '*.dhall' -exec sh -c 'echo {}; dhall --ascii format --inplace {}' \;
-	prettier --write lint.js
 
 # https://marmelab.com/blog/2016/02/29/auto-documented-makefile.html
 .PHONY: help
