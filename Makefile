@@ -1,8 +1,8 @@
 .PHONY: all
-all: compile format
+all: build
 
-.PHONY: compile
-compile: ## Compile packages.json
+.PHONY: build
+build: ## Compile packages.json
 	@(set -euo pipefail; ./build.py | tee packages.json)
 
 	@#FIXME: use ditto for this?

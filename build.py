@@ -1,17 +1,15 @@
 #!/usr/bin/env python3
 
 import json
+import os
 import subprocess
 import sys
 
-def dhall_to_json(file, *args):
-    with open(file, "r") as handle:
-       dhall = handle.read()
-
+def dhall_to_json(dhall_expr, *args):
     try:
         completed_process = subprocess.run(
             ["dhall-to-json", *args],
-            input=dhall.encode("utf-8"),
+            input=dhall_expr.encode("utf-8"),
             stdout=subprocess.PIPE,
             check=True
         )
@@ -34,9 +32,18 @@ def lint(package_set):
             print(f"  {error}", file=sys.stderr)
         sys.exit(1)
 
+def make_dhall_expr():
+    dhall_files = []
+    for root, _, files in os.walk("./src"):
+        dhall_files.extend(os.path.join(root, file) for file in files if file != "Package.dhall")
+    value = " # ".join(f"toMap {dhall_file}" for dhall_file in dhall_files)
+    type = "List { mapKey : Text, mapValue : ./src/Package.dhall }"
+    return f"{value} : {type}"
+
 def main(argv=()):
     package_set = {}
-    map_items = dhall_to_json("packages.dhall", "--no-maps")
+    dhall = make_dhall_expr()
+    map_items = dhall_to_json(dhall, "--no-maps")
     for map_item in map_items:
         key, value = map_item["mapKey"], map_item["mapValue"]
         if key in package_set:
