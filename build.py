@@ -52,5 +52,5 @@ def main(argv=()):
     lint(package_set)
     print(json.dumps(package_set, indent=2, sort_keys=True))
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main(argv=sys.argv[1:])

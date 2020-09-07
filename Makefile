@@ -8,10 +8,15 @@ build: ## Compile packages.json
 	@#FIXME: use ditto for this?
 	@nix-hash --type sha256 --base32 packages.json | tee packages.sha256
 
+.PHONY: check
+check: ## Make sure everything's good
+	./check.py 
+
 .PHONY: format
 format: ## Format all the things
 	find . -iname '*.dhall' -exec sh -c 'echo {}; dhall --ascii format --inplace {}' \;
 
+# `make help`
 # https://marmelab.com/blog/2016/02/29/auto-documented-makefile.html
 .PHONY: help
 help: ## Show this help message
