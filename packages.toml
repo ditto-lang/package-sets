@@ -8,6 +8,11 @@ github = { owner = "ditto-lang", repo = "js-ref" }
 revision = "fb8a458da5a9394afc199974ed880bf9e99c7571"
 sha256 = "a25b7f0f65ce48157ca6ff536b675c7fdd1383c6b901991257328bbd6189cf3d"
 
+[js-task]
+github = { owner = "ditto-lang", repo = "js-task" }
+revision = "b34429bb37eacff9a9e156f5886a65a45786f566"
+sha256 = "b6228fbcc0412f86767ae4f9f27eeb70a21e12bd1fd2a0c7888cf1d245d94f02"
+
 [js-unknown]
 github = { owner = "ditto-lang", repo = "js-unknown" }
 revision = "d1f4547199e5aef059a624f41c6078e116c5b3ab"

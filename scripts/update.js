@@ -50,6 +50,10 @@ async function main() {
       owner: "ditto-lang",
       repo: "js-exception",
     }),
+    fetchGitHubPackageEntry({
+      owner: "ditto-lang",
+      repo: "js-task",
+    }),
   ]);
   entries.sort(([name, _], [otherName, __]) => name.localeCompare(otherName));
   for (const [_, entry] of entries) {
