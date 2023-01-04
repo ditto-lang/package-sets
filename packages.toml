@@ -1,7 +1,7 @@
 [js-exception]
 github = { owner = "ditto-lang", repo = "js-exception" }
-revision = "51ffb64694f080ba1df8dc6127a39ce6ad06a9b9"
-sha256 = "2bb2aac16d2eb2dc720c33ca86c9c79e116d1f28e9ed5c7472562b6880c2cb4e"
+revision = "f798d3e61c2872d5c390192755e62875f019ebe4"
+sha256 = "a4fe8f00edabd53b6e80c54ab912d99b5776d69566a306f60deeb18a66bffdcb"
 
 [js-ref]
 github = { owner = "ditto-lang", repo = "js-ref" }
@@ -10,8 +10,8 @@ sha256 = "a25b7f0f65ce48157ca6ff536b675c7fdd1383c6b901991257328bbd6189cf3d"
 
 [js-unknown]
 github = { owner = "ditto-lang", repo = "js-unknown" }
-revision = "eb4a167a875e7e3d8bd8db5cbd89ba0ce50cfac3"
-sha256 = "bbc1d9f84e5a07623f3f5914c49e1c24dccb4c50e0a986eeac7dfd23a91c85b0"
+revision = "d1f4547199e5aef059a624f41c6078e116c5b3ab"
+sha256 = "0495608e20259cf0bd4ec64466b683f0e409f1eaf6b598dbb95e386efe1bf838"
 
 [std]
 github = { owner = "ditto-lang", repo = "std" }
