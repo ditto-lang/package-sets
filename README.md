@@ -1,5 +1,5 @@
 ```toml
 [[package-set.extends]]
-url = "https://raw.githubusercontent.com/ditto-lang/package-sets/36ecceca571ff5ace49c6d81eaa0520e5f032a1d/packages.toml"
-sha256 = "b1f2c727f8877eb95bb254398826a7f0dad41581de561b9f30b2c876293d73fd"
+url = "https://raw.githubusercontent.com/ditto-lang/package-sets/273d5b41af8fc79cf219d7c7c9eb9d23bffc9c07/packages.toml"
+sha256 = "3294e82dff5f6eb24472822ddd4bccd613a95604470d58c7b0d301378f619640"
 ```
