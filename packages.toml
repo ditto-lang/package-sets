@@ -1,25 +1,25 @@
 [js-exception]
 github = { owner = "ditto-lang", repo = "js-exception" }
-revision = "f798d3e61c2872d5c390192755e62875f019ebe4"
-sha256 = "a4fe8f00edabd53b6e80c54ab912d99b5776d69566a306f60deeb18a66bffdcb"
+revision = "b1264045231d88cd565cdd445eb6ffa684c82dc6"
+sha256 = "295b571e1715068fa44decab2fbb701e331fcf5741d837b8b996ff9c6bf40220"
 
 [js-ref]
 github = { owner = "ditto-lang", repo = "js-ref" }
-revision = "fb8a458da5a9394afc199974ed880bf9e99c7571"
-sha256 = "a25b7f0f65ce48157ca6ff536b675c7fdd1383c6b901991257328bbd6189cf3d"
+revision = "59b7b419913bf565be0b651c5be775209a06f7dc"
+sha256 = "8740d679e7e0a5d75c5afba9b5f284c3ce07391fc8330f08f07d2857fa93c0a0"
 
 [js-task]
 github = { owner = "ditto-lang", repo = "js-task" }
-revision = "07c04c4df229e7c989a2ae9379350aa20655e628"
-sha256 = "79d222c98e18a86490097263baf0a40271188e6609b7ed401d236b3e8e7f8552"
+revision = "338810cb449a27da7dbcc4fb3b239cd82c9bb341"
+sha256 = "d8e14d726c0db0c56ac4d901528757684dfa27938ea882201f4741e8b1e1b458"
 
 [js-unknown]
 github = { owner = "ditto-lang", repo = "js-unknown" }
-revision = "d1f4547199e5aef059a624f41c6078e116c5b3ab"
-sha256 = "0495608e20259cf0bd4ec64466b683f0e409f1eaf6b598dbb95e386efe1bf838"
+revision = "d37c7fad328c9adb70ff71f97baf6cf910136c7b"
+sha256 = "24b05b40839358123e12fff49d53063e0ff71aab4cc8e6f5d4930275f82c8fc0"
 
 [std]
 github = { owner = "ditto-lang", repo = "std" }
-revision = "4e85667f8b628cb56d14d6f6d85aa9c4f5737ecb"
-sha256 = "c03f4c85ef5f8247caecb95e6b3397b429a517ce9cbc80291effc209c23b4cc0"
+revision = "158c69e6d4abfae03cf4034b3b4e2a61eed891f4"
+sha256 = "3a5832c9df4e0b5aefe1a3e3ddc0850ab0bdc568a2b3dc8a6a53d94c71a19f11"
 
