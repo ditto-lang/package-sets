@@ -10,8 +10,8 @@ sha256 = "974415bed4eb5af1e26c52b7cad3e06d0a3a08757c208dffbf96cd7de8755416"
 
 [js-task]
 github = { owner = "ditto-lang", repo = "js-task" }
-revision = "22551297692a4aab0de0b6ae8c8b4950bdc521e7"
-sha256 = "df3deb5dc680842ccd5ec9ae59d1257b711240c052fec9931c907684b808438b"
+revision = "5807aefe8bcccda0b553bafa6a39d780db3d0b50"
+sha256 = "1e6943d3512c3f53f25b839eb3674747a6fcb5c6100a9d0a574566996efbcfde"
 
 [js-unknown]
 github = { owner = "ditto-lang", repo = "js-unknown" }
@@ -20,6 +20,6 @@ sha256 = "02db01fd57bd8313625578ec5bb756583231afd27f1ecabd41cb749a391359d2"
 
 [std]
 github = { owner = "ditto-lang", repo = "std" }
-revision = "f48b7216def711c0f15d59ab0905b9a782563a2a"
-sha256 = "9139768b7b245218f09f647aca1d47390924322a4c5ea2c6b4bc6d1ae537b15e"
+revision = "9ecfe9785ff3c67ab78517b136b4cdc33d909ca1"
+sha256 = "98bfc5c341f561877c902ffe36e7f21be8843fc7520667738048e0d3c3ff1dd4"
 
