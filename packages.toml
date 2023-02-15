@@ -20,6 +20,6 @@ sha256 = "02db01fd57bd8313625578ec5bb756583231afd27f1ecabd41cb749a391359d2"
 
 [std]
 github = { owner = "ditto-lang", repo = "std" }
-revision = "9ecfe9785ff3c67ab78517b136b4cdc33d909ca1"
-sha256 = "98bfc5c341f561877c902ffe36e7f21be8843fc7520667738048e0d3c3ff1dd4"
+revision = "53b9283fe7f5e41bc55dd11ed5df3a649f39280f"
+sha256 = "af12aa16b719d21f63cb526a0d4089aa095737ed8823dcdbf78f607190cc0537"
 
